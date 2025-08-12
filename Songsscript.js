@@ -1,0 +1,99 @@
+const songs = [
+  {
+    title: "ADIYEA PULLA",
+    src: "Compresedsong/WhatsApp Audio 2025-08-07 at 17.47.42_f8b41907.mp3",
+    cover: "WhatsApp_Image_2025-08-02_at_11.54.48_7f11c120-removebg-preview.png",
+    musicBy: "RISHIKESH SRIRAM",
+    lyrics: "BALAJI.G",
+    singer: "BALAJI.G,RISHIKESH SRIRAM.V",
+    distribution: "Zinxs-band",
+    label: "Sonic-root-Music",
+    studio: "Amrish Studio's"
+  },
+  {
+    title: "STUDLY",
+    src: "Compresedsong/WhatsAppAudio2025-08-07at17-47-42f8b41907.mp3",
+    cover: "WhatsApp_Image_2025-08-02_at_11.54.48_7f11c120-removebg-preview.png",
+    musicBy: "RISHIKESH SRIRAM",
+    lyrics: "KOWSHIKA.S, LOKESH.K",
+    singer: "RISHIKESH SRIRAM",
+    distribution: "Zinxs-band",
+    label: "Sonic-root-Music",
+    studio: "Amrish Studio's"
+  },
+  {
+    title: "SAY_NO_TO_DRUGS",
+    src: "Songs/Onnuku-Renda-MassTamilan.org.mp3",
+    cover: "client/Songsimages/WhatsApp_Image_2025-08-02_at_11.54.48_7f11c120-removebg-preview.png",
+    musicBy: "RISHIKESH SRIRAM",
+    lyrics: "NADODI KAVINGAN PUSHPARAJ",
+    singer: "SETHUMATHAVAN,ABDUL MOHASIN",
+    distribution: "Zinxs-band",
+    label: "Sonic-root-Music",
+    studio: "Amrish Studio's"
+  },
+  {
+    title: "FRIENDSHIP ANTHEM",
+    src: "Compresedsong/frasanthemfull (1).mp3",
+    cover: "WhatsApp_Image_2025-08-02_at_11.54.48_7f11c120-removebg-preview.png",
+    musicBy: "RISHIKESH SRIRAM",
+    lyrics: "RISHIKESH SRIRAM",
+    singer: "RISHIKESH SRIRAM",
+    distribution: "Zinxs-band",
+    label: "Sonic-root-Music",
+    studio: "Amrish Studio's"
+  },
+  {
+    title: "KADHAL_URAVEA",
+    src: "Compresedsong/WhatsAppAudio2025-07-29at15-16-54683cd8cb.mp3",
+    cover: "WhatsApp_Image_2025-08-02_at_11.54.48_7f11c120-removebg-preview.png",
+    musicBy: "RISHIKESH SRIRAM",
+    lyrics: "UDHAYA",
+    singer: "YASMIN BANU,RISHIKESH SRIRAM",
+    distribution: "Zinxs-band",
+    label: "Sonic-root-Music",
+    studio: "Amrish Studio's"
+  },
+  {
+    title: "UIREA_URAEA", 
+    src: "Compresedsong/WhatsApp Audio 2025-07-31 at 14.47.58_a5485cb3.mp3",
+    cover: "WhatsApp_Image_2025-08-02_at_11.54.48_7f11c120-removebg-preview.png",
+    musicBy: "RISHIKESH SRIRAM",
+    lyrics: "NADODIKAVINKAN PUSHPARAJ",
+    singer: "DD.DVIYA,RISHIKESH SRIRAM",
+    distribution: "Zinxs-band",
+    label: "Sonic-root-Music",
+    studio: "Amrish Studio's"
+  },
+  
+];
+
+const playlist = document.getElementById("playlist");
+const audio = document.getElementById("audio");
+const source = document.getElementById("source");
+const cover = document.getElementById("cover");
+const musicBy = document.getElementById("musicBy");
+const lyrics = document.getElementById("lyrics");
+const singer = document.getElementById("singer");
+const distribution = document.getElementById("distribution");
+const label = document.getElementById("label");
+const studio = document.getElementById("studio");
+
+// Load playlist
+songs.forEach((song, index) => {
+  const li = document.createElement("li");
+  li.textContent = song.title;
+  li.addEventListener("click", () => {
+    source.src = song.src;
+    audio.load();
+    audio.play();
+    cover.src = song.cover;
+    musicBy.textContent = song.musicBy;
+    lyrics.textContent = song.lyrics;
+    singer.textContent = song.singer;
+    distribution.textContent = song.distribution;
+    label.textContent = song.label;
+    studio.textContent = song.studio;
+  });
+  playlist.appendChild(li);
+});

@@ -1,0 +1,43 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+  <meta charset="UTF-8" />
+  <meta name="viewport" content="width=device-width, initial-scale=1.0"/>
+  <title>Rishi BGMS</title>
+  <link rel="stylesheet" href="./Videostyle.css" />
+</head>
+<body>
+
+  <div class="container">
+    <!-- Left: Song player -->
+      <div class="left-panel">
+  <img id="cover" src="" alt="Song Cover" />
+  <audio id="audio" controls>
+    <source id="source" src="" type="audio/mp3" />
+    Your browser does not support the audio element.
+  </audio>
+  <div class="song-info">
+    <p><strong>THEME:</strong> <span id="Thememusic"></span></p>
+    <p><strong>COMPOSED BY:</strong> <span id="musicBy"></span></p>
+    <p><span id="lyrics"></span></p>
+    <p><span id="singer"></span></p>
+    <p><strong>Distribution:</strong> <span id="distribution"></span></p>
+    <p><strong>Label:</strong> <span id="label"></span></p>
+    <p><strong>Recorded at:</strong> <span id="studio"></span></p>
+  </div>
+</div>
+    <!-- Right: Playlist -->
+    <div class="right-panel">
+      <h3>Label Playlist</h3>
+      <center>
+      <h2>MASS THEMES</h2>
+      </center>
+      <ul id="playlist">
+        <!-- Dynamic songs will load here -->
+      </ul>
+    </div>
+  </div>
+
+<script src="./Videoscript.js"></script>
+</body>
+</html>

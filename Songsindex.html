@@ -1,0 +1,43 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+  <meta charset="UTF-8" />
+  <meta name="viewport" content="width=device-width, initial-scale=1.0"/>
+  <title>Sonic root music</title>
+  <link rel="icon" type="image/png" href="images\WhatsApp_Image_2025-08-07_at_18.47.30_795cba9f-removebg-preview.png">
+  <link rel="stylesheet" href="./Songsstyle.css" />
+</head>
+<body>
+
+  <div class="container">
+    <!-- Left: Song player -->
+      <div class="left-panel">
+  <img id="cover" src="" alt="Song Cover" />
+  <audio id="audio" controls>
+    <source id="source" src="" type="audio/mp3" />
+    Your browser does not support the audio element.
+  </audio>
+  <div class="song-info">
+    <p><strong>Music:</strong> <span id="musicBy"></span></p>
+    <p><strong>Lyrics:</strong> <span id="lyrics"></span></p>
+    <p><strong>Singer:</strong> <span id="singer"></span></p>
+    <p><strong>Distribution:</strong> <span id="distribution"></span></p>
+    <p><strong>Label:</strong> <span id="label"></span></p>
+    <p><strong>Recorded at:</strong> <span id="studio"></span></p>
+  </div>
+</div>
+    <!-- Right: Playlist -->
+    <div class="right-panel">
+      <h3>Label Playlist</h3>
+      <center>
+        <h2>SONGS</h2>
+      </center>
+      <ul id="playlist">
+        <!-- Dynamic songs will load here -->
+      </ul>
+    </div>
+  </div>
+
+<script src="./Songsscript.js"></script>
+</body>
+</html>
