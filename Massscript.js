@@ -12,7 +12,7 @@ const songs = [
   {
     title: "THEME 2",
     src: "MassTheme3.mp3",
-    cover: "WhatsApp Image 2025-08-07 at 18.47.30_795cba9f.jpg",
+    cover: "WhatsApp_Image_2025-08-07_at_18.47.30_795cba9f-removebg-preview.png",
     Thememusic:"FALL IN LOVE",
     musicBy: "RISHIKESH SRIRAM",
     distribution: "Zinxs-band",
@@ -22,7 +22,7 @@ const songs = [
   {
     title:"THEME 3",
     src: "MassTheme4.mp3",
-    cover: "WhatsApp Image 2025-08-07 at 18.47.30_795cba9f.jpg",
+    cover: "WhatsApp_Image_2025-08-07_at_18.47.30_795cba9f-removebg-preview.png",
     musicBy: "RISHIKESH SRIRAM",
     distribution: "Zinxs-band",
     label: "Sonic-root-Music",
@@ -31,7 +31,7 @@ const songs = [
   {
     title: "THEME 4",
     src: "./Songs/WhatsApp Audio 2025-08-07 at 17.42.08_83b3facb.mp3",
-    cover: "Images/WhatsApp Image 2025-08-07 at 18.47.30_795cba9f.jpg",
+    cover: "WhatsApp_Image_2025-08-07_at_18.47.30_795cba9f-removebg-preview.png",
     musicBy: "RISHIKESH SRIRAM",
     distribution: "Zinxs-band",
     label: "Sonic-root-Music",
@@ -40,7 +40,7 @@ const songs = [
   {
     title: "THEME 5",
     src: "./Songs/WhatsApp Audio 2025-08-07 at 17.57.42_adc3688f.mp3",
-    cover: "Images/ChatGPT_Image_Aug_6__2025__09_37_09_PM-removebg-preview.png",
+    cover: "WhatsApp_Image_2025-08-07_at_18.47.30_795cba9f-removebg-preview.png",
     musicBy: "RISHIKESH SRIRAM",
     distribution: "Zinxs-band",
     label: "Sonic-root-Music",
@@ -232,5 +232,6 @@ songs.forEach((song, index) => {
   });
   playlist.appendChild(li);
 });
+
 
 
