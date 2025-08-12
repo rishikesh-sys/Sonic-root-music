@@ -1,7 +1,7 @@
 const songs = [
   {
     title: "ADIYEA PULLA",
-    src: "https://github.com/rishikesh-sys/Sonic-root-music/blob/main/Adiyeapulla%20full%20song.mp3",
+    src: "https://github.com/rishikesh-sys/Sonic-root-music/raw/refs/heads/main/Adiyeapulla%20full%20song.mp3",
     cover: "WhatsApp_Image_2025-08-02_at_11.54.48_7f11c120-removebg-preview.png",
     musicBy: "RISHIKESH SRIRAM",
     lyrics: "BALAJI.G",
@@ -97,5 +97,6 @@ songs.forEach((song, index) => {
   });
   playlist.appendChild(li);
 });
+
 
 
