@@ -1,3 +1,18 @@
+/* Mobile view fix */
+@media (max-width: 768px) {
+  .your-container {
+    flex-direction: column;
+    text-align: center;
+  }
+  img {
+    width: 100%;
+    height: auto;
+  }
+}
+
+
+
+
 .card-section {
   display: flex;
   justify-content: center;
@@ -228,4 +243,5 @@
   position:relative;
   top:0%;
   margin-bottom: 80px;
+
 }
