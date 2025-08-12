@@ -1,7 +1,7 @@
 const songs = [
   {
     title: "ADIYEA PULLA",
-    src: "Compresedsong/WhatsApp Audio 2025-08-07 at 17.47.42_f8b41907.mp3",
+    src: "Adiyeapulla full song.mp3",
     cover: "WhatsApp_Image_2025-08-02_at_11.54.48_7f11c120-removebg-preview.png",
     musicBy: "RISHIKESH SRIRAM",
     lyrics: "BALAJI.G",
@@ -12,7 +12,7 @@ const songs = [
   },
   {
     title: "STUDLY",
-    src: "Compresedsong/WhatsAppAudio2025-08-07at17-47-42f8b41907.mp3",
+    src: "Studly.mp3",
     cover: "WhatsApp_Image_2025-08-02_at_11.54.48_7f11c120-removebg-preview.png",
     musicBy: "RISHIKESH SRIRAM",
     lyrics: "KOWSHIKA.S, LOKESH.K",
@@ -34,7 +34,7 @@ const songs = [
   },
   {
     title: "FRIENDSHIP ANTHEM",
-    src: "Compresedsong/frasanthemfull (1).mp3",
+    src: "frasanthemfull (1).mp3",
     cover: "WhatsApp_Image_2025-08-02_at_11.54.48_7f11c120-removebg-preview.png",
     musicBy: "RISHIKESH SRIRAM",
     lyrics: "RISHIKESH SRIRAM",
@@ -45,7 +45,7 @@ const songs = [
   },
   {
     title: "KADHAL_URAVEA",
-    src: "Compresedsong/WhatsAppAudio2025-07-29at15-16-54683cd8cb.mp3",
+    src: "Kadhal uravea.mp3",
     cover: "WhatsApp_Image_2025-08-02_at_11.54.48_7f11c120-removebg-preview.png",
     musicBy: "RISHIKESH SRIRAM",
     lyrics: "UDHAYA",
@@ -56,7 +56,7 @@ const songs = [
   },
   {
     title: "UIREA_URAEA", 
-    src: "Compresedsong/WhatsApp Audio 2025-07-31 at 14.47.58_a5485cb3.mp3",
+    src: "uriyea.mp3",
     cover: "WhatsApp_Image_2025-08-02_at_11.54.48_7f11c120-removebg-preview.png",
     musicBy: "RISHIKESH SRIRAM",
     lyrics: "NADODIKAVINKAN PUSHPARAJ",
@@ -97,3 +97,4 @@ songs.forEach((song, index) => {
   });
   playlist.appendChild(li);
 });
+
