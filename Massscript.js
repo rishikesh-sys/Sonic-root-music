@@ -1,7 +1,7 @@
 const songs = [
   {
     title: "THEME 1",
-    src: "MassTheme1.mp3",
+    src: "https://github.com/rishikesh-sys/Sonic-root-music/raw/refs/heads/main/MassTheme1.mp3",
     cover: "ChatGPT_Image_Aug_6__2025__09_37_09_PM-removebg-preview.png",
     Thememusic:"FALL IN LOVE",
     musicBy: "RISHIKESH SRIRAM",
@@ -232,4 +232,5 @@ songs.forEach((song, index) => {
   });
   playlist.appendChild(li);
 });
+
 
