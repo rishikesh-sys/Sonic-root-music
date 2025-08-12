@@ -44,7 +44,7 @@ const songs = [
     studio: "Amrish Studio's"
   },
   {
-    title: "KADHAL_URAVEA",
+    title: "KADHAL_URAVEA KAROKE (Unreleased album)",
     src: "Kadhal uravea.mp3",
     cover: "WhatsApp_Image_2025-08-02_at_11.54.48_7f11c120-removebg-preview.png",
     musicBy: "RISHIKESH SRIRAM",
@@ -55,7 +55,7 @@ const songs = [
     studio: "Amrish Studio's"
   },
   {
-    title: "UIREA_URAEA", 
+    title: "UIREA_URAEA KAROKE (Unreleased album)", 
     src: "uriyea.mp3",
     cover: "WhatsApp_Image_2025-08-02_at_11.54.48_7f11c120-removebg-preview.png",
     musicBy: "RISHIKESH SRIRAM",
@@ -97,6 +97,7 @@ songs.forEach((song, index) => {
   });
   playlist.appendChild(li);
 });
+
 
 
 
