@@ -24,7 +24,7 @@ const songs = [
   {
     title: "SAY_NO_TO_DRUGS",
     src: "Say no to drugs karokr.mp3",
-    cover: "client/Songsimages/WhatsApp_Image_2025-08-02_at_11.54.48_7f11c120-removebg-preview.png",
+    cover: "WhatsApp_Image_2025-08-02_at_11.54.48_7f11c120-removebg-preview.png",
     musicBy: "RISHIKESH SRIRAM",
     lyrics: "NADODI KAVINGAN PUSHPARAJ",
     singer: "SETHUMATHAVAN,ABDUL MOHASIN",
@@ -97,6 +97,7 @@ songs.forEach((song, index) => {
   });
   playlist.appendChild(li);
 });
+
 
 
 
