@@ -44,6 +44,11 @@
   font-weight: bold;
 }
 
+/* 🔹 Gap below navbar for logo/image section */
+.top {
+  padding-top: 80px; /* equal to navbar height */
+}
+
 .message-box {
   border: 2px solid #fff;
   padding: 20px;
@@ -119,15 +124,15 @@
   align-items: center;
 }
 
-/* 🔹 Updated Image Style for Better Position */
+/* 🔹 Updated Image Style */
 .left img {
   width: 100%;
-  max-width: 400px; /* desktop limit */
+  max-width: 400px;
   height: auto;
   border-radius: 20px;
   box-shadow: 0 0 15px rgba(255, 255, 255, 0.3);
   text-align: center;
-  margin-top: 15%; /* reduced for better positioning */
+  margin-top: 15%;
 }
 
 .music-card {
@@ -252,7 +257,7 @@
 
   .left img {
     width: 90%;
-    margin-top: 0; /* no extra gap in mobile */
+    margin-top: 0;
   }
 
   /* Cards */
