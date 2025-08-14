@@ -46,7 +46,7 @@
 
 /* 🔹 Gap below navbar for logo/image section */
 .top {
-  padding-top: 80px; /* equal to navbar height */
+  padding-top: 88px; /* was 80px → increased for perfect alignment */
 }
 
 .message-box {
@@ -124,7 +124,7 @@
   align-items: center;
 }
 
-/* 🔹 Updated Image Style */
+/* 🔹 Updated Image Style with 10% tweak */
 .left img {
   width: 100%;
   max-width: 400px;
@@ -132,7 +132,7 @@
   border-radius: 20px;
   box-shadow: 0 0 15px rgba(255, 255, 255, 0.3);
   text-align: center;
-  margin-top: 15%;
+  margin-top: 17%; /* was 15% → increased for better balance */
 }
 
 .music-card {
