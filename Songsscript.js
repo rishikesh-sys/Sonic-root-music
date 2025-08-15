@@ -64,8 +64,7 @@ const songs = [
     distribution: "Zinxs-band",
     label: "Sonic-root-Music",
     studio: "Amrish Studio's"
-  },
-  
+  }
 ];
 
 const playlist = document.getElementById("playlist");
@@ -79,10 +78,11 @@ const distribution = document.getElementById("distribution");
 const label = document.getElementById("label");
 const studio = document.getElementById("studio");
 
-// Load playlist
-songs.forEach((song, index) => {
+// Load playlist dynamically
+songs.forEach((song) => {
   const li = document.createElement("li");
   li.textContent = song.title;
+
   li.addEventListener("click", () => {
     source.src = song.src;
     audio.load();
@@ -94,13 +94,11 @@ songs.forEach((song, index) => {
     distribution.textContent = song.distribution;
     label.textContent = song.label;
     studio.textContent = song.studio;
+
+    // Active Song Highlight
+    document.querySelectorAll("#playlist li").forEach(item => item.style.background = "");
+    li.style.background = "#555";
   });
+
   playlist.appendChild(li);
 });
-
-
-
-
-
-
-
