@@ -46,7 +46,7 @@
 
 /* 🔹 Gap below navbar for logo/image section */
 .top {
-  padding-top: 88px; /* was 80px → increased for perfect alignment */
+  padding-top: 130px; /* was 80px → increased for perfect alignment */
 }
 
 .message-box {
@@ -300,3 +300,4 @@
     padding: 20px;
   }
 }
+
