@@ -1,65 +1,3 @@
-body {
-  font-family: Arial, sans-serif;
-  margin: 0;
-  background: #121212;
-  color: white;
-}
-
-.container {
-  display: flex;
-  height: 100vh;
-}
-
-.left-panel,
-.right-panel {
-  padding: 70px;
-}
-
-.left-panel {
-  width: 60%;
-  border-right: 1px solid #333;
-  text-align: center;
-}
-
-.right-panel {
-  width: 40%;
-  overflow-y: auto; /* Playlist scroll */
-}
-
-.left-panel img {
-  width: 50%;
-  max-height: 700px;
-  object-fit: cover;
-  border-radius: 10px;
-  margin-bottom: 30px;
-}
-
-audio {
-  width: 60%;
-  margin-bottom: 15px;
-}
-
-.song-info p {
-  margin: 5px 0;
-}
-
-ul#playlist {
-  list-style: none;
-  padding: 0;
-}
-
-ul#playlist li {
-  padding: 12px;
-  border-bottom: 1px solid #444;
-  cursor: pointer;
-  transition: background 0.3s;
-  font-size: 1rem;
-}
-
-ul#playlist li:hover {
-  background: #333;
-}
-
 /* Mobile View Fix */
 @media (max-width: 768px) {
   .container {
@@ -74,9 +12,10 @@ ul#playlist li:hover {
     border: none;
   }
 
+  /* Image smaller in mobile */
   .left-panel img {
-    width: 90%;
-    max-height: 400px;
+    width: 70%;  /* Before 90%, now smaller */
+    max-height: 300px;
   }
 
   audio {
