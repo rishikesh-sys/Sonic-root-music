@@ -1,4 +1,65 @@
-/* Mobile View Fix */
+/* ---------- DESKTOP (OLD STYLE) ---------- */
+body {
+  font-family: Arial, sans-serif;
+  margin: 0;
+  background: #121212;
+  color: white;
+}
+
+.container {
+  display: flex;
+  height: 100vh;
+}
+
+.left-panel,
+.right-panel {
+  padding: 70px;
+}
+
+.left-panel {
+  width: 60%;
+  border-right: 1px solid #333;
+  text-align: center;
+}
+
+.right-panel {
+  width: 40%;
+}
+
+.left-panel img {
+  width: 50%;
+  max-height: 700px;
+  object-fit: cover;
+  border-radius: 10px;
+  margin-bottom: 30px;
+}
+
+audio {
+  width: 60%;
+  margin-bottom: 15px;
+}
+
+.song-info p {
+  margin: 5px 0;
+}
+
+ul#playlist {
+  list-style: none;
+  padding: 0;
+}
+
+ul#playlist li {
+  padding: 10px;
+  border-bottom: 1px solid #444;
+  cursor: pointer;
+  transition: background 0.3s;
+}
+
+ul#playlist li:hover {
+  background: #333;
+}
+
+/* ---------- MOBILE FIX (NEW STYLE) ---------- */
 @media (max-width: 768px) {
   .container {
     flex-direction: column;
@@ -12,9 +73,8 @@
     border: none;
   }
 
-  /* Image smaller in mobile */
   .left-panel img {
-    width: 70%;  /* Before 90%, now smaller */
+    width: 70%; /* Smaller image in mobile */
     max-height: 300px;
   }
 
