@@ -1,3 +1,4 @@
+/* ---------- DESKTOP (OLD STYLE) ---------- */
 body {
   font-family: Arial, sans-serif;
   margin: 0;
@@ -10,7 +11,8 @@ body {
   height: 100vh;
 }
 
-.left-panel, .right-panel {
+.left-panel,
+.right-panel {
   padding: 70px;
 }
 
@@ -56,3 +58,41 @@ ul#playlist li {
 ul#playlist li:hover {
   background: #333;
 }
+
+/* ---------- MOBILE FIX (NEW STYLE) ---------- */
+@media (max-width: 768px) {
+  .container {
+    flex-direction: column;
+    height: auto;
+  }
+
+  .left-panel,
+  .right-panel {
+    width: 100%;
+    padding: 15px;
+    border: none;
+  }
+
+  .left-panel img {
+    width: 70%; /* Smaller image in mobile */
+    max-height: 300px;
+  }
+
+  audio {
+    width: 100%;
+  }
+
+  ul#playlist li {
+    font-size: 1.1rem;
+    padding: 15px;
+  }
+
+  .right-panel {
+    max-height: 300px;
+    overflow-y: auto;
+    border-top: 1px solid #333;
+  }
+}
+
+
+
