@@ -10,7 +10,8 @@ body {
   height: 100vh;
 }
 
-.left-panel, .right-panel {
+.left-panel,
+.right-panel {
   padding: 70px;
 }
 
@@ -22,6 +23,7 @@ body {
 
 .right-panel {
   width: 40%;
+  overflow-y: auto; /* Playlist scroll */
 }
 
 .left-panel img {
@@ -47,12 +49,48 @@ ul#playlist {
 }
 
 ul#playlist li {
-  padding: 10px;
+  padding: 12px;
   border-bottom: 1px solid #444;
   cursor: pointer;
   transition: background 0.3s;
+  font-size: 1rem;
 }
 
 ul#playlist li:hover {
   background: #333;
+}
+
+/* Mobile View Fix */
+@media (max-width: 768px) {
+  .container {
+    flex-direction: column;
+    height: auto;
+  }
+
+  .left-panel,
+  .right-panel {
+    width: 100%;
+    padding: 15px;
+    border: none;
+  }
+
+  .left-panel img {
+    width: 90%;
+    max-height: 400px;
+  }
+
+  audio {
+    width: 100%;
+  }
+
+  ul#playlist li {
+    font-size: 1.1rem;
+    padding: 15px;
+  }
+
+  .right-panel {
+    max-height: 300px;
+    overflow-y: auto;
+    border-top: 1px solid #333;
+  }
 }
